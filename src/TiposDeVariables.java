@@ -80,6 +80,15 @@ public class TiposDeVariables {
         // usando tasas de cambio inventadas (ej: 1 moneda MC = 5 V-Bucks = 2 RP).
         // Imprime el resultado en formato claro.
 
+        int mc= 1;
+        int vbucks= 5;
+        int rp=2;
+        int conversion= 150;
+        int mcvbucks=conversion*mc*vbucks ;
+        int mcrp=conversion*mc*rp;
+
+        System.out.println("Tus " + conversion + " MC, equivalen a " + mcvbucks +" VBucks y " + mcrp + " riot points ");
+
 
         // ==============================
         // EJERCICIO 6 – Clasificación de jugador (Fortnite / LoL)
@@ -96,6 +105,19 @@ public class TiposDeVariables {
         //   KDA < 1        → "Jugador NOOB"
         //
         // OPCIONAL: muestra también el tier en el que quedaría (Bronce, Plata, Oro, Platino…).
+
+
+
+        int kills= 8;
+        int muertes=2;
+        int asistencias=4;
+        int kda= (kills+asistencias)/muertes;
+        if (kda<1){ System.out.println( kda + " puntazos. Vaya bronceee, Tienes que mejorar! Eres un noobie!!)");}
+        if (kda>=1 && kda<=3){System.out.println( kda+ " Enhorabuena Platita, estás dentro de lo normal ");}
+        if (kda>=3 && kda<=5){System.out.println( kda+" wow un oro, eres bastante bueno!! ");}
+        if (kda>5){ System.out.println(kda+ " puntazos. Eres un PRO!! Como buen Platino Deberías comprar la empresa " ) ;}
+
+
 
     }
 }
